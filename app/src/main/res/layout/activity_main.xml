@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOUS NOS CENTRES DE LAVAGE AUTO EXEPXION ET AUTOCLEAN EXPRESS" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trouvez le centre de lavage le plus proche de vous Choisissez votre marque" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:onClick="goAutoClean"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/stylish_btn"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/autoclean_logo" />
+
+            <TextView
+                android:textColor="#008000"
+                android:layout_marginBottom="20dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AutoClean Express" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:onClick="goExepxion"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/stylish_btn"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="181dp"
+                android:src="@drawable/exepxion_logo" />
+
+            <TextView
+                android:textColor="#FF0000"
+                android:layout_marginBottom="20dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exepxion" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
